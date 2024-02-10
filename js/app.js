@@ -44,6 +44,17 @@ function animm(elm) {
     });
 };
 
+function fullScreen(element) {
+    if(element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if(element.webkitrequestFullscreen) {
+        element.webkitRequestFullscreen();
+    } else if(element.mozRequestFullscreen) {
+        element.mozRequestFullScreen();
+    }
+}
+var html = document.documentElement;
+fullScreen(html);
 function R(min, max) {
     return min + Math.random() * (max - min)
 };
