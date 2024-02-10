@@ -12,14 +12,14 @@ html, body {
     overflow-y: hidden !important;
 }
 :fullscreen, ::backdrop {
-    background: #fdfdfd url("img/back.jpg") repeat !important;
+    background: #fdfdfd url('img/back.jpg') repeat !important;
 }
 body {
     margin: 0;
     perspective: 1000px;
     font-family: 'Caveat', cursive;
     background-size: contain;
-    background: #fdfdfd url("img/back.jpg") repeat !important;
+    background: #fdfdfd url('img/back.jpg') repeat !important;
     background-size: 1000px;
 }
 a.blubtn {
