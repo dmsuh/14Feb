@@ -2,14 +2,14 @@
 TweenLite.set("#petals")
 TweenLite.set("img", {xPercent: "-50%", yPercent: "-50%"})
 
-var total = 100;
+var total = 128;
 var warp = document.getElementById("petals"),
     w = window.innerWidth,
     h = window.innerHeight;
 
 for (i = 0; i < total; i++) {
     var Div = document.createElement('div');
-    data = Math.floor(Math.random() * 3)
+    data = Math.floor(Math.random() * 4)
     console.log(data)
     if (data === 0) {
         TweenLite.set(Div, {attr: {class: 'dot'}, x: R(0, w), y: R(-200, -150), z: R(-200, 200)});
@@ -19,8 +19,12 @@ for (i = 0; i < total; i++) {
         TweenLite.set(Div, {attr: {class: 'dot1'}, x: R(0, w), y: R(-200, -150), z: R(-200, 200)});
         warp.appendChild(Div);
         animm(Div);
-    } else {
+    } else if (data === 2) {
         TweenLite.set(Div, {attr: {class: 'dot2'}, x: R(0, w), y: R(-200, -150), z: R(-200, 200)});
+        warp.appendChild(Div);
+        animm(Div);
+    }else {
+        TweenLite.set(Div, {attr: {class: 'dot3'}, x: R(0, w), y: R(-200, -150), z: R(-200, 200)});
         warp.appendChild(Div);
         animm(Div);
     }

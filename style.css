@@ -1,16 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+
 html, body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 body {
     margin: 0;
-    background: #fdfdfd;
-    overflow: hidden;
     perspective: 1000px;
     font-family: 'Caveat', cursive;
+    background-size: contain;
+    background: #fdfdfd url("/img/back.jpg") repeat;
+    background-size: 1000px;
 }
-
+.bot-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bot-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .dot {
     width: 35px;
     height: 35px;
@@ -32,6 +51,14 @@ body {
     height: 35px;
     position: absolute;
     background: url('img/petal2.png');
+    background-size: 100% 100%;
+    z-index: 5!important;
+}
+.dot3 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url('img/petal3.png');
     background-size: 100% 100%;
 }
 
@@ -140,7 +167,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 1;
+    z-index: 2;
     transform-style: preserve-3d;
     perspective: 200px;
     opacity: 0;
