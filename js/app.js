@@ -9,7 +9,7 @@ var warp = document.getElementById("petals"),
 
 for (i = 0; i < total; i++) {
     var Div = document.createElement('div');
-    data = Math.floor(Math.random() * 1)
+    data = Math.floor(Math.random() * 4)
     console.log(data)
     if (data === 0) {
         TweenLite.set(Div, {attr: {class: 'dot'}, x: R(0, w), y: R(-200, -150), z: R(-200, 200)});
@@ -64,12 +64,13 @@ var title = document.getElementById("title")
 title.innerText = 'Размышления'
 setTimeout(() => {
     title.innerText = 'Любимая Полина, с 14 Февраля!'
-}, 22000)
+}, 23000)
 /* https://mattboldt.com/typed.js/ */
 var typed = new Typed('#text', {
     strings: ['Я тут решил, что простые валентинки уже далеко в прошлом, хоть они довольно и романтичны.' +
     ' Но как говорится живем уже не в том веке, когда они были популярны, ведь уже 21 век. И я считаю валентинки должны соответствовать этому времени. И поэтому пишу тебе',
-        'Встретил я тебя довольно не заметно, даже неожиданно поэтому '],
+        'В жизнь ворвалась в мою, довольно быстро. Я даже не знал порой, что так могу кем-то заинтересоваться. Често не верил, что найду кого-то ' +
+        'настолько близкого, как ты, Полиночка. Не знаю почему, но ты себя сравниваешь с кем-то. Ты идеальна для меня. И замены тебе нет и не будет!!!'],
     startDelay: 3000,
     typeSpeed: 50,
     backSpeed: 10,
