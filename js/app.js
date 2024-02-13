@@ -64,7 +64,7 @@ var title = document.getElementById("title")
 title.innerText = 'Размышления'
 setTimeout(() => {
     title.innerText = 'Любимая Полина, с 14 Февраля!'
-}, 26000)
+}, 30000)
 /* https://mattboldt.com/typed.js/ */
 var typed = new Typed('#text', {
     strings: ['Я тут решил, что простые валентинки уже далеко в прошлом, хоть они довольно и романтичны.' +
